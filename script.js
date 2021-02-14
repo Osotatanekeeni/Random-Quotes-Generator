@@ -96,6 +96,7 @@ function LoadQuote() {
 function nextQuote() {
     //Go back to the first quote if the current
     // one is the last in the quote list
+    
     if (quoteIndex < quoteList.length - 1) {
         quoteIndex += 1;
     } else {
@@ -116,4 +117,12 @@ function prevQuote() {
 
     // Load and play the new track
     LoadQuote(quoteIndex);
+}
+
+function restartQuote() {
+    document.getElementById("now-playing").innerHTML = "QUOTE " + `${1}` + " / " + `${quoteList.length + 1}`;
+    document.getElementById("quote").innerHTML = quoteList[0].quote;
+    document.getElementById("author").innerHTML = quoteList[0].author;
+    quoteIndex = 0;
+    
 }
