@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=	, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,400,600i&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="info.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <title>RQG</title>
+</head>
+<body>
+
+    <div class="infocardContainer">
+        <div id="main">
+          <img src="avatar.png"></img>
+        </div>
+        <div id="textbois">
+          <h2>Osotatanekeeni Kari</h2>
+          <h4>Software Engineer</h4>
+          <a id="email" href="mailto:tatanekari52@gmail.com">tatanekari52@gmail.com</a>
+          <div id="hotlinks">
+            <a href="https://github.com/Osotatanekeeni"><i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com">
+                <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <div class="heading">
+        <h1 style="font-style: italic;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">Hover over the card to view the quote...</h1>
+    </div>
+    
+    <div class="card-view">
+        <div class="quote-block card">
+            <div class="card-front">
+                <p id="now-playing"></p>
+                
+            </div>
+            <div class="card-back">
+                <h3 id="quote"></h3>
+                <p id="author"></p>
+            </div>
+        </div>
+    
+        <div class="buttons">
+            <button class="prev" value="Prev" onclick="prevQuote()" class="quote-button"><span><i class="fas fa-arrow-circle-left"></i></span> </button>
+            <button class="curr" value="Start Quotes" onclick="LoadQuote()" class="quote-button"> <span><i class="fas fa-play-circle"></i></span> </button>
+            <button class="next" value="Next" onclick="nextQuote()" class="quote-button"><span><i class="fas fa-arrow-circle-right"></i></span></button>
+        </div>
+    </div>
+</body>
+</html>
